@@ -68,6 +68,6 @@ describe('<EventItem />', () => {
     const link = screen.getByText('Explore Event');
 
     expect(link).toBeInTheDocument();
-    expect(link.getAttribute('href')).toEqual(`/events/${testEventDetails.id}`);
+    expect(link.getAttribute('href')).toEqual(`/${testEventDetails.id}`);
   });
 });
