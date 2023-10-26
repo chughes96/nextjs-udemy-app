@@ -3,7 +3,6 @@ name: PR quality gates
 on:
   pull_request:
     branches:
-      - main
       - develop
 
 jobs:
@@ -16,4 +15,4 @@ jobs:
         with:
           node-version: 18
       - run: npm ci
-      - run: npm lint
+      - run: npm run lint
