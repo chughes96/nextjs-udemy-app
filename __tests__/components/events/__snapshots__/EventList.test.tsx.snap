@@ -1,0 +1,330 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<EventList /> renders correctly and matches the snapshot 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <ul
+        class="list"
+      >
+        <li
+          class="item"
+        >
+          <img
+            alt="images/coding-event.jpg"
+            src="/images/coding-event.jpg"
+          />
+          <div
+            class="content"
+          >
+            <div
+              class="summary"
+            >
+              <h2>
+                Programming for everyone
+              </h2>
+              <div
+                class="date"
+              >
+                <time>
+                  12 May 2021
+                </time>
+              </div>
+              <div
+                class="address"
+              >
+                <address>
+                  Somestreet 25
+12345 San Somewhereo
+                </address>
+              </div>
+            </div>
+            <div
+              class="actions"
+            >
+              <a
+                href="/events/e1"
+              >
+                Explore Event
+              </a>
+            </div>
+          </div>
+        </li>
+        <li
+          class="item"
+        >
+          <img
+            alt="images/introvert-event.jpg"
+            src="/images/introvert-event.jpg"
+          />
+          <div
+            class="content"
+          >
+            <div
+              class="summary"
+            >
+              <h2>
+                Networking for introverts
+              </h2>
+              <div
+                class="date"
+              >
+                <time>
+                  30 May 2021
+                </time>
+              </div>
+              <div
+                class="address"
+              >
+                <address>
+                  New Wall Street 5
+98765 New Work
+                </address>
+              </div>
+            </div>
+            <div
+              class="actions"
+            >
+              <a
+                href="/events/e2"
+              >
+                Explore Event
+              </a>
+            </div>
+          </div>
+        </li>
+        <li
+          class="item"
+        >
+          <img
+            alt="images/extrovert-event.jpg"
+            src="/images/extrovert-event.jpg"
+          />
+          <div
+            class="content"
+          >
+            <div
+              class="summary"
+            >
+              <h2>
+                Networking for extroverts
+              </h2>
+              <div
+                class="date"
+              >
+                <time>
+                  10 April 2022
+                </time>
+              </div>
+              <div
+                class="address"
+              >
+                <address>
+                  My Street 12
+10115 Broke City
+                </address>
+              </div>
+            </div>
+            <div
+              class="actions"
+            >
+              <a
+                href="/events/e3"
+              >
+                Explore Event
+              </a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </body>,
+  "container": <div>
+    <ul
+      class="list"
+    >
+      <li
+        class="item"
+      >
+        <img
+          alt="images/coding-event.jpg"
+          src="/images/coding-event.jpg"
+        />
+        <div
+          class="content"
+        >
+          <div
+            class="summary"
+          >
+            <h2>
+              Programming for everyone
+            </h2>
+            <div
+              class="date"
+            >
+              <time>
+                12 May 2021
+              </time>
+            </div>
+            <div
+              class="address"
+            >
+              <address>
+                Somestreet 25
+12345 San Somewhereo
+              </address>
+            </div>
+          </div>
+          <div
+            class="actions"
+          >
+            <a
+              href="/events/e1"
+            >
+              Explore Event
+            </a>
+          </div>
+        </div>
+      </li>
+      <li
+        class="item"
+      >
+        <img
+          alt="images/introvert-event.jpg"
+          src="/images/introvert-event.jpg"
+        />
+        <div
+          class="content"
+        >
+          <div
+            class="summary"
+          >
+            <h2>
+              Networking for introverts
+            </h2>
+            <div
+              class="date"
+            >
+              <time>
+                30 May 2021
+              </time>
+            </div>
+            <div
+              class="address"
+            >
+              <address>
+                New Wall Street 5
+98765 New Work
+              </address>
+            </div>
+          </div>
+          <div
+            class="actions"
+          >
+            <a
+              href="/events/e2"
+            >
+              Explore Event
+            </a>
+          </div>
+        </div>
+      </li>
+      <li
+        class="item"
+      >
+        <img
+          alt="images/extrovert-event.jpg"
+          src="/images/extrovert-event.jpg"
+        />
+        <div
+          class="content"
+        >
+          <div
+            class="summary"
+          >
+            <h2>
+              Networking for extroverts
+            </h2>
+            <div
+              class="date"
+            >
+              <time>
+                10 April 2022
+              </time>
+            </div>
+            <div
+              class="address"
+            >
+              <address>
+                My Street 12
+10115 Broke City
+              </address>
+            </div>
+          </div>
+          <div
+            class="actions"
+          >
+            <a
+              href="/events/e3"
+            >
+              Explore Event
+            </a>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
