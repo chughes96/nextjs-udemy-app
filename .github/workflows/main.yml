@@ -6,8 +6,8 @@ on:
       - develop
 
 jobs:
-  lint:
-    name: Lint & Format
+  build:
+    name: Perform code build steps
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -17,13 +17,4 @@ jobs:
       - run: npm ci
       - run: npm run lint
       - run: npm run format
-  unit-test:
-    name: Unit Test
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v1
-        with:
-          node-version: 18
-      - run: npm ci
       - run: npm run test
