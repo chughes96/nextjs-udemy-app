@@ -7,8 +7,7 @@ import { getAllEvents } from '@/dummy-data';
 describe('<EventItem />', () => {
   let testEventDetails = createEvent();
 
-  const renderComponent = (eventDetails: EventDetails) =>
-    render(<EventItem event={eventDetails} />);
+  const renderComponent = (eventDetails: EventDetails) => render(<EventItem event={eventDetails} />);
 
   it('renders correctly and matches the snapshot', () => {
     // Cannot use test data builder reliably for snapshots because of randomised data
@@ -38,14 +37,11 @@ describe('<EventItem />', () => {
   it('formats and then renders the event date', () => {
     renderComponent(testEventDetails);
 
-    const formattedDate = new Date(testEventDetails.date).toLocaleDateString(
-      'en-GB',
-      {
-        day: 'numeric',
-        month: 'long',
-        year: 'numeric',
-      }
-    );
+    const formattedDate = new Date(testEventDetails.date).toLocaleDateString('en-GB', {
+      day: 'numeric',
+      month: 'long',
+      year: 'numeric',
+    });
 
     const date = screen.getByText(formattedDate);
 
