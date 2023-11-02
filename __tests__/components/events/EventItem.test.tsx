@@ -1,13 +1,13 @@
-import { render, screen } from '@testing-library/react';
+import { fireEvent, render, screen } from '@testing-library/react';
 import { createEvent } from '@/__tests__/utils/test-data-builder';
 import { EventItem } from '@/components/events/EventItem';
-import { EventDetails } from '@/types';
 import { getAllEvents } from '@/dummy-data';
+import { renderWithNavigation } from '@/__tests__/utils/ComponentRenderer';
 
 describe('<EventItem />', () => {
   let testEventDetails = createEvent();
 
-  const renderComponent = (eventDetails: EventDetails) => render(<EventItem event={eventDetails} />);
+  const renderComponent = (eventDetails = testEventDetails) => render(<EventItem event={eventDetails} />);
 
   it('renders correctly and matches the snapshot', () => {
     // Cannot use test data builder reliably for snapshots because of randomised data
@@ -19,7 +19,7 @@ describe('<EventItem />', () => {
   });
 
   it('renders the event title', () => {
-    renderComponent(testEventDetails);
+    renderComponent();
 
     const title = screen.getByText(testEventDetails.title);
 
@@ -27,7 +27,7 @@ describe('<EventItem />', () => {
   });
 
   it('renders the event image', () => {
-    renderComponent(testEventDetails);
+    renderComponent();
 
     const image = screen.getByAltText(testEventDetails.image);
 
@@ -35,7 +35,7 @@ describe('<EventItem />', () => {
   });
 
   it('formats and then renders the event date', () => {
-    renderComponent(testEventDetails);
+    renderComponent();
 
     const formattedDate = new Date(testEventDetails.date).toLocaleDateString('en-GB', {
       day: 'numeric',
@@ -49,7 +49,7 @@ describe('<EventItem />', () => {
   });
 
   it('formats and then renders the event location', () => {
-    renderComponent(testEventDetails);
+    renderComponent();
 
     const formattedLocation = testEventDetails.location.replace(', ', '\n');
 
@@ -58,12 +58,17 @@ describe('<EventItem />', () => {
     expect(location).toBeInTheDocument();
   });
 
-  it('renders a routing link to the event details page', () => {
-    renderComponent(testEventDetails);
+  it('renders a link to the event details page that navigates when clicked', () => {
+    const routerPushMock = jest.fn();
+
+    renderWithNavigation(<EventItem event={testEventDetails} />, { push: routerPushMock });
 
     const link = screen.getByText('Explore Event');
-
     expect(link).toBeInTheDocument();
-    expect(link.getAttribute('href')).toEqual(`/events/${testEventDetails.id}`);
+
+    fireEvent.click(link);
+
+    expect(routerPushMock).toHaveBeenCalled();
+    expect(routerPushMock.mock.calls[0][0]).toEqual(`/events/${testEventDetails.id}`);
   });
 });

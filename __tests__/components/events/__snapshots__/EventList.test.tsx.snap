@@ -27,6 +27,19 @@ exports[`<EventList /> renders correctly and matches the snapshot 1`] = `
               <div
                 class="date"
               >
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                </svg>
                 <time>
                   12 May 2021
                 </time>
@@ -34,6 +47,25 @@ exports[`<EventList /> renders correctly and matches the snapshot 1`] = `
               <div
                 class="address"
               >
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                  <path
+                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                </svg>
                 <address>
                   Somestreet 25
 12345 San Somewhereo
@@ -44,9 +76,27 @@ exports[`<EventList /> renders correctly and matches the snapshot 1`] = `
               class="actions"
             >
               <a
+                class="btn"
                 href="/events/e1"
               >
-                Explore Event
+                <span>
+                  Explore Event
+                </span>
+                <span
+                  class="icon"
+                >
+                  <svg
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      clip-rule="evenodd"
+                      d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                      fill-rule="evenodd"
+                    />
+                  </svg>
+                </span>
               </a>
             </div>
           </div>
@@ -70,6 +120,19 @@ exports[`<EventList /> renders correctly and matches the snapshot 1`] = `
               <div
                 class="date"
               >
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                </svg>
                 <time>
                   30 May 2021
                 </time>
@@ -77,6 +140,25 @@ exports[`<EventList /> renders correctly and matches the snapshot 1`] = `
               <div
                 class="address"
               >
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                  <path
+                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                </svg>
                 <address>
                   New Wall Street 5
 98765 New Work
@@ -87,9 +169,27 @@ exports[`<EventList /> renders correctly and matches the snapshot 1`] = `
               class="actions"
             >
               <a
+                class="btn"
                 href="/events/e2"
               >
-                Explore Event
+                <span>
+                  Explore Event
+                </span>
+                <span
+                  class="icon"
+                >
+                  <svg
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      clip-rule="evenodd"
+                      d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                      fill-rule="evenodd"
+                    />
+                  </svg>
+                </span>
               </a>
             </div>
           </div>
@@ -113,6 +213,19 @@ exports[`<EventList /> renders correctly and matches the snapshot 1`] = `
               <div
                 class="date"
               >
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                </svg>
                 <time>
                   10 April 2022
                 </time>
@@ -120,6 +233,25 @@ exports[`<EventList /> renders correctly and matches the snapshot 1`] = `
               <div
                 class="address"
               >
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                  <path
+                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                </svg>
                 <address>
                   My Street 12
 10115 Broke City
@@ -130,9 +262,27 @@ exports[`<EventList /> renders correctly and matches the snapshot 1`] = `
               class="actions"
             >
               <a
+                class="btn"
                 href="/events/e3"
               >
-                Explore Event
+                <span>
+                  Explore Event
+                </span>
+                <span
+                  class="icon"
+                >
+                  <svg
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      clip-rule="evenodd"
+                      d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                      fill-rule="evenodd"
+                    />
+                  </svg>
+                </span>
               </a>
             </div>
           </div>
@@ -163,6 +313,19 @@ exports[`<EventList /> renders correctly and matches the snapshot 1`] = `
             <div
               class="date"
             >
+              <svg
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                />
+              </svg>
               <time>
                 12 May 2021
               </time>
@@ -170,6 +333,25 @@ exports[`<EventList /> renders correctly and matches the snapshot 1`] = `
             <div
               class="address"
             >
+              <svg
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                />
+                <path
+                  d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                />
+              </svg>
               <address>
                 Somestreet 25
 12345 San Somewhereo
@@ -180,9 +362,27 @@ exports[`<EventList /> renders correctly and matches the snapshot 1`] = `
             class="actions"
           >
             <a
+              class="btn"
               href="/events/e1"
             >
-              Explore Event
+              <span>
+                Explore Event
+              </span>
+              <span
+                class="icon"
+              >
+                <svg
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </span>
             </a>
           </div>
         </div>
@@ -206,6 +406,19 @@ exports[`<EventList /> renders correctly and matches the snapshot 1`] = `
             <div
               class="date"
             >
+              <svg
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                />
+              </svg>
               <time>
                 30 May 2021
               </time>
@@ -213,6 +426,25 @@ exports[`<EventList /> renders correctly and matches the snapshot 1`] = `
             <div
               class="address"
             >
+              <svg
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                />
+                <path
+                  d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                />
+              </svg>
               <address>
                 New Wall Street 5
 98765 New Work
@@ -223,9 +455,27 @@ exports[`<EventList /> renders correctly and matches the snapshot 1`] = `
             class="actions"
           >
             <a
+              class="btn"
               href="/events/e2"
             >
-              Explore Event
+              <span>
+                Explore Event
+              </span>
+              <span
+                class="icon"
+              >
+                <svg
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </span>
             </a>
           </div>
         </div>
@@ -249,6 +499,19 @@ exports[`<EventList /> renders correctly and matches the snapshot 1`] = `
             <div
               class="date"
             >
+              <svg
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                />
+              </svg>
               <time>
                 10 April 2022
               </time>
@@ -256,6 +519,25 @@ exports[`<EventList /> renders correctly and matches the snapshot 1`] = `
             <div
               class="address"
             >
+              <svg
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                />
+                <path
+                  d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                />
+              </svg>
               <address>
                 My Street 12
 10115 Broke City
@@ -266,9 +548,27 @@ exports[`<EventList /> renders correctly and matches the snapshot 1`] = `
             class="actions"
           >
             <a
+              class="btn"
               href="/events/e3"
             >
-              Explore Event
+              <span>
+                Explore Event
+              </span>
+              <span
+                class="icon"
+              >
+                <svg
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </span>
             </a>
           </div>
         </div>

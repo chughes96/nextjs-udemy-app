@@ -1,15 +1,14 @@
 import React from 'react';
-import Link from 'next/link';
 import { EventDetails } from '@/types';
 import styles from './EventItem.module.css';
+import { Button } from '@/components/ui/Button';
+import { AddressIcon, ArrowRightIcon, DateIcon } from '@/components/icons';
 
 type Props = {
   event: EventDetails;
 };
 
-export const EventItem = ({
-  event: { title, image, date, location, id },
-}: Props) => {
+export const EventItem = ({ event: { title, image, date, location, id } }: Props) => {
   const formattedDate = new Date(date).toLocaleDateString('en-GB', {
     day: 'numeric',
     month: 'long',
@@ -25,14 +24,21 @@ export const EventItem = ({
         <div className={styles.summary}>
           <h2>{title}</h2>
           <div className={styles.date}>
+            <DateIcon />
             <time>{formattedDate}</time>
           </div>
           <div className={styles.address}>
+            <AddressIcon />
             <address>{formattedAddress}</address>
           </div>
         </div>
         <div className={styles.actions}>
-          <Link href={`/events/${id}`}>Explore Event</Link>
+          <Button link={`/events/${id}`}>
+            <span>Explore Event</span>
+            <span className={styles.icon}>
+              <ArrowRightIcon />
+            </span>
+          </Button>
         </div>
       </div>
     </li>
