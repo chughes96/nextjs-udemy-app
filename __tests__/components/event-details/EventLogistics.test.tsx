@@ -21,7 +21,7 @@ describe('<EventLogistics />', () => {
   it('renders the event image', () => {
     renderComponent();
 
-    const image = screen.getByAltText(testEventDetails.image);
+    const image = screen.getByAltText(testEventDetails.title);
 
     expect(image).toBeInTheDocument();
   });

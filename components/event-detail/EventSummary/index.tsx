@@ -1,4 +1,4 @@
-import styles from './event-summary.module.css';
+import styles from './EventSummary.module.css';
 
 type Props = {
   title: string;

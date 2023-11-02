@@ -1,5 +1,5 @@
 import { ReactNode } from 'react';
-import styles from './logistics-item.module.css';
+import styles from './LogisticsItem.module.css';
 
 type Props = {
   icon: React.FC;

@@ -12,7 +12,7 @@ exports[`<EventLogistics /> renders correctly and matches the snapshot 1`] = `
           class="image"
         >
           <img
-            alt="images/coding-event.jpg"
+            alt="Programming for everyone"
             src="/images/coding-event.jpg"
           />
         </div>
@@ -96,7 +96,7 @@ exports[`<EventLogistics /> renders correctly and matches the snapshot 1`] = `
         class="image"
       >
         <img
-          alt="images/coding-event.jpg"
+          alt="Programming for everyone"
           src="/images/coding-event.jpg"
         />
       </div>

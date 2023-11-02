@@ -1,5 +1,5 @@
 import { ReactNode } from 'react';
-import styles from './event-content.module.css';
+import styles from './EventContent.module.css';
 
 type Props = {
   children: ReactNode;
