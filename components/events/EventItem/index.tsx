@@ -3,19 +3,16 @@ import { EventDetails } from '@/types';
 import styles from './EventItem.module.css';
 import { Button } from '@/components/ui/Button';
 import { AddressIcon, ArrowRightIcon, DateIcon } from '@/components/icons';
+import { formatAddress, formatDate } from '@/components/utils/data-formatter';
 
 type Props = {
   event: EventDetails;
 };
 
 export const EventItem = ({ event: { title, image, date, location, id } }: Props) => {
-  const formattedDate = new Date(date).toLocaleDateString('en-GB', {
-    day: 'numeric',
-    month: 'long',
-    year: 'numeric',
-  });
+  const formattedDate = formatDate(date);
 
-  const formattedAddress = location.replace(', ', '\n');
+  const formattedAddress = formatAddress(location);
 
   return (
     <li className={styles.item}>
