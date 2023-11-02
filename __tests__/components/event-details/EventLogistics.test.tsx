@@ -1,14 +1,13 @@
-import { fireEvent, render, screen } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import { createEvent } from '@/__tests__/utils/test-data-builder';
-import { EventItem } from '@/components/events/EventItem';
 import { getAllEvents } from '@/dummy-data';
-import { renderWithNavigation } from '@/__tests__/utils/ComponentRenderer';
+import { EventLogistics } from '@/components/event-detail/EventLogistics';
 import { formatAddress, formatDate } from '@/components/utils/data-formatter';
 
-describe('<EventItem />', () => {
+describe('<EventLogistics />', () => {
   let testEventDetails = createEvent();
 
-  const renderComponent = (eventDetails = testEventDetails) => render(<EventItem event={eventDetails} />);
+  const renderComponent = (eventDetails = testEventDetails) => render(<EventLogistics eventDetails={eventDetails} />);
 
   it('renders correctly and matches the snapshot', () => {
     // Cannot use test data builder reliably for snapshots because of randomised data
@@ -19,18 +18,10 @@ describe('<EventItem />', () => {
     expect(component).toMatchSnapshot();
   });
 
-  it('renders the event title', () => {
-    renderComponent();
-
-    const title = screen.getByText(testEventDetails.title);
-
-    expect(title).toBeInTheDocument();
-  });
-
   it('renders the event image', () => {
     renderComponent();
 
-    const image = screen.getByAltText(testEventDetails.image);
+    const image = screen.getByAltText(testEventDetails.title);
 
     expect(image).toBeInTheDocument();
   });
@@ -53,19 +44,5 @@ describe('<EventItem />', () => {
     const location = screen.getByText(formattedLocation);
 
     expect(location).toBeInTheDocument();
-  });
-
-  it('renders a link to the event details page that navigates when clicked', () => {
-    const routerPushMock = jest.fn();
-
-    renderWithNavigation(<EventItem event={testEventDetails} />, { push: routerPushMock });
-
-    const link = screen.getByText('Explore Event');
-    expect(link).toBeInTheDocument();
-
-    fireEvent.click(link);
-
-    expect(routerPushMock).toHaveBeenCalled();
-    expect(routerPushMock.mock.calls[0][0]).toEqual(`/events/${testEventDetails.id}`);
   });
 });
